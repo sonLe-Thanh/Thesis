@@ -38,6 +38,18 @@ def process_line(current_line):
             while reverse_string[k] != '"':
                 k += 1
             current_line = reverse_string[k + 1:][::-1]
+        elif current_line[-1].isdigit():
+            k = 1
+            reverse_string = current_line[::-1]
+            while reverse_string[k] != ',':
+                k += 1
+
+            k+=1
+
+            while reverse_string[k] != ',':
+                k += 1
+            current_line = reverse_string[k + 1:][::-1]
+
         return current_line[:-1]
 
     def remove_country_place(current_line):
