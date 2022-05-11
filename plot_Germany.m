@@ -1,5 +1,5 @@
-data_uci = load("Data/Result/Germany_50_result_uci.csv");
-data_umass = load("Data/Result/Germany_50_result_umass.csv");
+data_uci = load("Data/Result/France_50_result_uci.csv");
+data_umass = load("Data/Result/France_50_result_umass.csv");
 
 plot(data_uci(:,1), data_uci(:,2), "-r", "linewidth",2);
 hold on
@@ -16,3 +16,4 @@ legend(["UCI","UMass"], "FontSize", 17);
 hold off 
 
 % 73 for Germany
+% 70 for France
