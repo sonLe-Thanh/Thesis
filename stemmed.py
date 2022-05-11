@@ -70,8 +70,8 @@ class ProcessLine:
                 while reverse_string[k] != ',':
                     k += 1
                 current_line = reverse_string[k + 1:][::-1]
-            if str(self.current_year) not in ["2020", "2021"]:
-                self.current_year = "pre2020"
+            if str(self.current_year) not in ["2018", "2019", "2020", "2021"]:
+                self.current_year = "pre2018"
             # If not find any date, then assume this to be the current year
             return current_line[:-1]
 
@@ -92,11 +92,6 @@ class ProcessLine:
         for country in country_name:
             read_file_name = "Data/" + country + "_processed.csv"
             write_file_name_lemmatized = "Data/Lemmatized/" + country + "_lemmatized.txt"
-            write_file_name_2021 = "Data/Timestamp/" + country + "_2021.txt"
-            write_file_name_2020 = "Data/Timestamp/" + country + "_2020.txt"
-            write_file_name_pre2020 = "Data/Timestamp/" + country + "_pre2020.txt"
-
-
 
             file_write = open(write_file_name_lemmatized, "a")
             file_read = open(read_file_name)
