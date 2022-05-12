@@ -1,5 +1,5 @@
 # Remove duplicated records
-folder = "Data/"
+folder = "Data/Raw/"
 country_name = "Korea"
 in_file = folder+ country_name + "_data.csv"
 out_file = folder + country_name+ "_processed.csv"

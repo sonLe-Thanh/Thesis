@@ -90,7 +90,7 @@ class ProcessLine:
 
     def process_file(self):
         for country in country_name:
-            read_file_name = "Data/" + country + "_processed.csv"
+            read_file_name = "Data/Cleaned/" + country + "_processed.csv"
             write_file_name_lemmatized = "Data/Lemmatized/" + country + "_lemmatized.txt"
 
             file_write = open(write_file_name_lemmatized, "a")
