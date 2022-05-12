@@ -1,0 +1,10 @@
+data_umass_pre2018 = load("Data/Result_timestamp/Germany_pre2018_50_result_umass.csv");
+data_umass_2018 = load("Data/Result_timestamp/Germany_2018_50_result_umass.csv");
+data_umass_2019 = load("Data/Result_timestamp/Germany_2019_50_result_umass.csv");
+data_umass_2020 = load("Data/Result_timestamp/Germany_2020_50_result_umass.csv");
+data_umass_2021 = load("Data/Result_timestamp/Germany_2021_50_result_umass.csv");
+
+max = zeros(5);
+[val, idx] = max(data_umass_pre2018(:,2));
+
+zedata_umass_pre2018(idx,1));
