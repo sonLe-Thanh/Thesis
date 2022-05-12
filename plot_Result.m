@@ -1,6 +1,6 @@
-data_umass = load("Data/Result/China_50_result_umass.csv");
-data_perplexity_train = load("Data/Result/China_50_result_perplexity_train.csv");
-data_perplexity_test = load("Data/Result/China_50_result_perplexity_test.csv");
+data_umass = load("Data/Result_timestamp/Germany_2018_50_result_umass.csv");
+data_perplexity_train = load("Data/Result_timestamp/Germany_2018_50_result_perplexity_train.csv");
+data_perplexity_test = load("Data/Result_timestamp/Germany_2018_50_result_perplexity_test.csv");
 
 f1 = figure;
 plot(data_umass(:,1), data_umass(:,2), "-b", "linewidth",2);
