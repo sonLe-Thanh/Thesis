@@ -3,7 +3,7 @@ TIMESTAMP = ["pre2018"; "2018"; "2019"; "2020"; "2021"];
 
 n_countries = 6;
 n_timestamp = 5;
-n_iteraions = 50;
+% n_iteraions = 50;
 file = [];
 topic = [];
 for i=1:n_countries
@@ -11,7 +11,7 @@ for i=1:n_countries
         country = COUNTRY(i);
         timestamp = TIMESTAMP(j);
 
-        file_umass_result = "Data/Result_timestamp/" + country + "_" + timestamp + "_" + n_iteraions + "_result_umass.csv";
+        file_umass_result = "Data/NMF/Result_timestamp/" + country + "_" + timestamp + "_result_umass.csv";
         data_umass = load(file_umass_result);
 
         [argvalue, argmax] = max(data_umass(:,2));
@@ -22,4 +22,4 @@ for i=1:n_countries
 end
 
 T = table(file, topic);
-writetable(T,'topic_timestamp.txt');
+writetable(T,'NMF_topic_timestamp.txt');

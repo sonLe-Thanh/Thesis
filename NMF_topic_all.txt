@@ -1,0 +1,7 @@
+file,topic
+Data/NMF/Result/China_result_umass.csv,48
+Data/NMF/Result/France_result_umass.csv,45
+Data/NMF/Result/Germany_result_umass.csv,40
+Data/NMF/Result/Japan_result_umass.csv,44
+Data/NMF/Result/Korea_result_umass.csv,44
+Data/NMF/Result/Vietnam_result_umass.csv,46

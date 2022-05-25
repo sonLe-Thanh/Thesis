@@ -1,6 +1,6 @@
-data_umass = load("Data/Result_timestamp/Germany_2018_50_result_umass.csv");
-data_perplexity_train = load("Data/Result_timestamp/Germany_2018_50_result_perplexity_train.csv");
-data_perplexity_test = load("Data/Result_timestamp/Germany_2018_50_result_perplexity_test.csv");
+data_umass = load("Data/NMF/Result/Vietnam_result_umass.csv");
+%data_perplexity_train = load("Data/NMF/Result/Germany_result_perplexity_train.csv");
+%data_perplexity_test = load("Data/Result_timestamp/Germany_2018_50_result_perplexity_test.csv");
 
 f1 = figure;
 plot(data_umass(:,1), data_umass(:,2), "-b", "linewidth",2);
@@ -10,13 +10,13 @@ ylabel("Umass", "FontSize", 20);
 title("Topic coherence (Umass) with different number of topics", "FontSize", 20);
 legend('Umass', "FontSize", 17);
 
-f2 = figure;
-plot(data_perplexity_train(:, 1), data_perplexity_train(:, 2), "-b", data_perplexity_test(:, 1), data_perplexity_test(:, 2), "-r", "linewidth", 2);
-xlabel("Number of topics", "FontSize", 20);
-ylabel("Perplexity", "FontSize", 20);
+%f2 = figure;
+%plot(data_perplexity_train(:, 1), data_perplexity_train(:, 2), "-b", data_perplexity_test(:, 1), data_perplexity_test(:, 2), "-r", "linewidth", 2);
+%xlabel("Number of topics", "FontSize", 20);
+%ylabel("Perplexity", "FontSize", 20);
 
-title("Perplexity with different number of topics", "FontSize", 20);
-legend(["Train", "Test"], "FontSize", 17);
+%title("Perplexity with different number of topics", "FontSize", 20);
+%legend(["Train", "Test"], "FontSize", 17);
 
 
 % 77 for France 
